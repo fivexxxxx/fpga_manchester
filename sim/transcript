@@ -1,0 +1,439 @@
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do compile.do
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 06:53:29 on Apr 23,2023
+# vlog -reportprogress 300 -work work glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 06:53:30 on Apr 23,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 06:53:30 on Apr 23,2023
+# vlog -reportprogress 300 -work work ../src/Mqst_Demodule.v ../src/Mqst_Module.v ../src/Mqst_top.v ../src/mancherster_rx.v ../src/mancherster_tx.v ../src/manchester.v ../src/precise_divider.v 
+# -- Compiling module Mqst_Demodule
+# -- Compiling module Mqst_Module
+# -- Compiling module Mqst_top
+# -- Compiling module mancherster_rx
+# -- Compiling module mancherster_tx
+# -- Compiling module machester
+# -- Compiling module precise_divider
+# 
+# Top level modules:
+# 	Mqst_top
+# 	machester
+# End time: 06:53:30 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 06:53:30 on Apr 23,2023
+# vlog -reportprogress 300 -work work test_mqst.v 
+# -- Compiling module test_mqst
+# 
+# Top level modules:
+# 	test_mqst
+# End time: 06:53:30 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.glbl work.test_mqst 
+# Start time: 06:53:30 on Apr 23,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Mqst_Demodule(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "Mqst_top(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "Mqst_Module(fast)".
+# Loading work.glbl(fast)
+# Loading work.test_mqst(fast)
+# Loading work.Mqst_top(fast)
+# Loading work.Mqst_Module(fast)
+# Loading work.Mqst_Demodule(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: sin  Hostname: DESKTOP-J0I4HRT  ProcessID: 3328
+#           Attempting to use alternate WLF file "./wlfthn1wwq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfthn1wwq
+run -all
+add wave -position insertpoint  \
+sim:/test_mqst/Mqst_top/bit_cnt
+add wave -position insertpoint  \
+sim:/test_mqst/Mqst_top/Mqst_tx/send_tmp
+add wave -position insertpoint  \
+sim:/test_mqst/Mqst_top/Mqst_rx/Mqst_BitIn_tmp
+do compile.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:09:45 on Apr 23,2023
+# vlog -reportprogress 300 -work work glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 07:09:45 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:09:45 on Apr 23,2023
+# vlog -reportprogress 300 -work work ../src/Mqst_Demodule.v ../src/Mqst_Module.v ../src/Mqst_top.v ../src/mancherster_rx.v ../src/mancherster_tx.v ../src/manchester.v ../src/precise_divider.v 
+# -- Compiling module Mqst_Demodule
+# -- Compiling module Mqst_Module
+# -- Compiling module Mqst_top
+# -- Compiling module mancherster_rx
+# -- Compiling module mancherster_tx
+# -- Compiling module machester
+# -- Compiling module precise_divider
+# 
+# Top level modules:
+# 	Mqst_top
+# 	machester
+# End time: 07:09:45 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:09:45 on Apr 23,2023
+# vlog -reportprogress 300 -work work test_mqst.v 
+# -- Compiling module test_mqst
+# 
+# Top level modules:
+# 	test_mqst
+# End time: 07:09:45 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 07:09:49 on Apr 23,2023, Elapsed time: 0:16:19
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.glbl work.test_mqst 
+# Start time: 07:09:49 on Apr 23,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.glbl(fast)
+# Loading work.test_mqst(fast)
+# Loading work.Mqst_top(fast)
+# Loading work.Mqst_Module(fast)
+# Loading work.Mqst_Demodule(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: sin  Hostname: DESKTOP-J0I4HRT  ProcessID: 3328
+#           Attempting to use alternate WLF file "./wlft39xe60".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft39xe60
+do compile.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:13:07 on Apr 23,2023
+# vlog -reportprogress 300 -work work glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 07:13:07 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:13:07 on Apr 23,2023
+# vlog -reportprogress 300 -work work ../src/Mqst_Demodule.v ../src/Mqst_Module.v ../src/Mqst_top.v ../src/mancherster_rx.v ../src/mancherster_tx.v ../src/manchester.v ../src/precise_divider.v 
+# -- Compiling module Mqst_Demodule
+# -- Compiling module Mqst_Module
+# -- Compiling module Mqst_top
+# -- Compiling module mancherster_rx
+# -- Compiling module mancherster_tx
+# -- Compiling module machester
+# -- Compiling module precise_divider
+# 
+# Top level modules:
+# 	Mqst_top
+# 	machester
+# End time: 07:13:07 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:13:07 on Apr 23,2023
+# vlog -reportprogress 300 -work work test_mqst.v 
+# -- Compiling module test_mqst
+# 
+# Top level modules:
+# 	test_mqst
+# End time: 07:13:07 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 07:13:11 on Apr 23,2023, Elapsed time: 0:03:22
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.glbl work.test_mqst 
+# Start time: 07:13:11 on Apr 23,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.glbl(fast)
+# Loading work.test_mqst(fast)
+# Loading work.Mqst_top(fast)
+# Loading work.Mqst_Module(fast)
+# Loading work.Mqst_Demodule(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: sin  Hostname: DESKTOP-J0I4HRT  ProcessID: 3328
+#           Attempting to use alternate WLF file "./wlfth21gi8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfth21gi8
+add wave -position insertpoint  \
+sim:/test_mqst/clk
+add wave -position insertpoint  \
+sim:/test_mqst/data_in
+add wave -position insertpoint  \
+sim:/test_mqst/data_in_valid
+add wave -position insertpoint  \
+sim:/test_mqst/Mqst_top/Bit_out
+add wave -position insertpoint  \
+sim:/test_mqst/Mqst_top/Bit_out_valid
+add wave -position insertpoint  \
+sim:/test_mqst/Mqst_top/Bit_out_tready
+add wave -position insertpoint  \
+sim:/test_mqst/Mqst_top/Mqst_BitOut
+add wave -position insertpoint  \
+sim:/test_mqst/Mqst_top/Mqst_tx/clk_cnt
+add wave -position insertpoint  \
+sim:/test_mqst/Mqst_top/Mqst_tx/send_tmp
+add wave -position insertpoint  \
+sim:/test_mqst/data_tready
+add wave -position insertpoint  \
+sim:/test_mqst/Mqst_BitIn
+add wave -position insertpoint  \
+sim:/test_mqst/Mqst_top/Mqst_rx/Bit_in
+add wave -position insertpoint  \
+sim:/test_mqst/Mqst_top/Mqst_rx/Bit_in_valid
+add wave -position insertpoint  \
+sim:/test_mqst/Mqst_top/Mqst_rx/clk_cnt
+add wave -position insertpoint  \
+sim:/test_mqst/Mqst_top/Mqst_rx/Mqst_BitIn_tmp
+add wave -position insertpoint  \
+sim:/test_mqst/Mqst_top/Mqst_rx/Bit_sync
+compile.do
+# couldn't execute ".\compile.do": no such file or directory
+do compile.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:22:11 on Apr 23,2023
+# vlog -reportprogress 300 -work work glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 07:22:12 on Apr 23,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:22:12 on Apr 23,2023
+# vlog -reportprogress 300 -work work ../src/Mqst_Demodule.v ../src/Mqst_Module.v ../src/Mqst_top.v ../src/mancherster_rx.v ../src/mancherster_tx.v ../src/manchester.v ../src/precise_divider.v 
+# -- Compiling module Mqst_Demodule
+# -- Compiling module Mqst_Module
+# -- Compiling module Mqst_top
+# -- Compiling module mancherster_rx
+# -- Compiling module mancherster_tx
+# -- Compiling module machester
+# -- Compiling module precise_divider
+# 
+# Top level modules:
+# 	Mqst_top
+# 	machester
+# End time: 07:22:12 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:22:12 on Apr 23,2023
+# vlog -reportprogress 300 -work work test_mqst.v 
+# -- Compiling module test_mqst
+# 
+# Top level modules:
+# 	test_mqst
+# End time: 07:22:12 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 07:22:18 on Apr 23,2023, Elapsed time: 0:09:07
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.glbl work.test_mqst 
+# Start time: 07:22:18 on Apr 23,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.glbl(fast)
+# Loading work.test_mqst(fast)
+# Loading work.Mqst_top(fast)
+# Loading work.Mqst_Module(fast)
+# Loading work.Mqst_Demodule(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: sin  Hostname: DESKTOP-J0I4HRT  ProcessID: 3328
+#           Attempting to use alternate WLF file "./wlftf56bw5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftf56bw5
+do compile.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:22:50 on Apr 23,2023
+# vlog -reportprogress 300 -work work glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 07:22:50 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:22:50 on Apr 23,2023
+# vlog -reportprogress 300 -work work ../src/Mqst_Demodule.v ../src/Mqst_Module.v ../src/Mqst_top.v ../src/mancherster_rx.v ../src/mancherster_tx.v ../src/manchester.v ../src/precise_divider.v 
+# -- Compiling module Mqst_Demodule
+# -- Compiling module Mqst_Module
+# -- Compiling module Mqst_top
+# -- Compiling module mancherster_rx
+# -- Compiling module mancherster_tx
+# -- Compiling module machester
+# -- Compiling module precise_divider
+# 
+# Top level modules:
+# 	Mqst_top
+# 	machester
+# End time: 07:22:50 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:22:51 on Apr 23,2023
+# vlog -reportprogress 300 -work work test_mqst.v 
+# -- Compiling module test_mqst
+# 
+# Top level modules:
+# 	test_mqst
+# End time: 07:22:51 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 07:22:54 on Apr 23,2023, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.glbl work.test_mqst 
+# Start time: 07:22:54 on Apr 23,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.glbl(fast)
+# Loading work.test_mqst(fast)
+# Loading work.Mqst_top(fast)
+# Loading work.Mqst_Module(fast)
+# Loading work.Mqst_Demodule(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: sin  Hostname: DESKTOP-J0I4HRT  ProcessID: 3328
+#           Attempting to use alternate WLF file "./wlft73i74q".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft73i74q
+do compile.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:33:35 on Apr 23,2023
+# vlog -reportprogress 300 -work work glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 07:33:36 on Apr 23,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:33:36 on Apr 23,2023
+# vlog -reportprogress 300 -work work ../src/Mqst_Demodule.v ../src/Mqst_Module.v ../src/Mqst_top.v ../src/mancherster_rx.v ../src/mancherster_tx.v ../src/manchester.v ../src/precise_divider.v 
+# -- Compiling module Mqst_Demodule
+# -- Compiling module Mqst_Module
+# -- Compiling module Mqst_top
+# -- Compiling module mancherster_rx
+# -- Compiling module mancherster_tx
+# -- Compiling module machester
+# -- Compiling module precise_divider
+# 
+# Top level modules:
+# 	Mqst_top
+# 	machester
+# End time: 07:33:36 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:33:36 on Apr 23,2023
+# vlog -reportprogress 300 -work work test_mqst.v 
+# -- Compiling module test_mqst
+# 
+# Top level modules:
+# 	test_mqst
+# End time: 07:33:36 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 07:33:40 on Apr 23,2023, Elapsed time: 0:10:46
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.glbl work.test_mqst 
+# Start time: 07:33:40 on Apr 23,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.glbl(fast)
+# Loading work.test_mqst(fast)
+# Loading work.Mqst_top(fast)
+# Loading work.Mqst_Module(fast)
+# Loading work.Mqst_Demodule(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: sin  Hostname: DESKTOP-J0I4HRT  ProcessID: 3328
+#           Attempting to use alternate WLF file "./wlftq7rzbj".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftq7rzbj
+# Can't move the Now cursor.
+do compile.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:49:40 on Apr 23,2023
+# vlog -reportprogress 300 -work work glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 07:49:40 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:49:40 on Apr 23,2023
+# vlog -reportprogress 300 -work work ../src/Mqst_Demodule.v ../src/Mqst_Module.v ../src/Mqst_top.v ../src/mancherster_rx.v ../src/mancherster_tx.v ../src/manchester.v ../src/precise_divider.v 
+# -- Compiling module Mqst_Demodule
+# -- Compiling module Mqst_Module
+# -- Compiling module Mqst_top
+# -- Compiling module mancherster_rx
+# -- Compiling module mancherster_tx
+# -- Compiling module machester
+# -- Compiling module precise_divider
+# 
+# Top level modules:
+# 	Mqst_top
+# 	machester
+# End time: 07:49:40 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 07:49:41 on Apr 23,2023
+# vlog -reportprogress 300 -work work test_mqst.v 
+# -- Compiling module test_mqst
+# 
+# Top level modules:
+# 	test_mqst
+# End time: 07:49:41 on Apr 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 07:49:44 on Apr 23,2023, Elapsed time: 0:16:04
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.glbl work.test_mqst 
+# Start time: 07:49:45 on Apr 23,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.glbl(fast)
+# Loading work.test_mqst(fast)
+# Loading work.Mqst_top(fast)
+# Loading work.Mqst_Module(fast)
+# Loading work.Mqst_Demodule(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: sin  Hostname: DESKTOP-J0I4HRT  ProcessID: 3328
+#           Attempting to use alternate WLF file "./wlft2m678d".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2m678d

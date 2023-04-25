@@ -1,0 +1,231 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/githubPrj/manchester/sim
+T_opt
+!s110 1682207385
+VUUWGNNBNboi]MTo0IVZU@1
+04 4 4 work glbl fast 0
+04 9 4 work test_mqst fast 0
+=1-1008b1f6cc79-64447299-149-24b4
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vglbl
+Z2 !s110 1682207380
+!i10b 1
+!s100 DCW3=ePZ4oEojGg2KL;HS0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IUnoQ6^CBWl`mlgKN0?KI32
+R0
+w1558713910
+8glbl.v
+Fglbl.v
+!i122 18
+L0 6 65
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1682207380.000000
+!s107 glbl.v|
+!s90 -reportprogress|300|-work|work|glbl.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+R1
+vmachester
+R2
+!i10b 1
+!s100 2bkDFoB?D6n1LlCNRzTXk0
+R3
+IcHRHUZ@C;[UnXJmAnOdA:1
+R0
+w1682175272
+8../src/manchester.v
+F../src/manchester.v
+!i122 19
+L0 2 38
+R4
+R5
+r1
+!s85 0
+31
+R6
+Z8 !s107 ../src/precise_divider.v|../src/manchester.v|../src/mancherster_tx.v|../src/mancherster_rx.v|../src/Mqst_top.v|../src/Mqst_Module.v|../src/Mqst_Demodule.v|
+Z9 !s90 -reportprogress|300|-work|work|../src/Mqst_Demodule.v|../src/Mqst_Module.v|../src/Mqst_top.v|../src/mancherster_rx.v|../src/mancherster_tx.v|../src/manchester.v|../src/precise_divider.v|
+!i113 0
+R7
+R1
+vmancherster_rx
+R2
+!i10b 1
+!s100 >E98gD_99G[EfPkMZg6Ia2
+R3
+I=DN]VU3P8:gl_aY;4UFa[1
+R0
+w1682168139
+8../src/mancherster_rx.v
+F../src/mancherster_rx.v
+!i122 19
+Z10 L0 1 93
+R4
+R5
+r1
+!s85 0
+31
+R6
+R8
+R9
+!i113 0
+R7
+R1
+vmancherster_tx
+R2
+!i10b 1
+!s100 ?WOcIU^XzK9J_EkK;J38f0
+R3
+IHYJg:0jET;ah4aC:SSio>1
+R0
+w1682168705
+8../src/mancherster_tx.v
+F../src/mancherster_tx.v
+!i122 19
+L0 1 70
+R4
+R5
+r1
+!s85 0
+31
+R6
+R8
+R9
+!i113 0
+R7
+R1
+vMqst_Demodule
+R2
+!i10b 1
+!s100 D?z7_4aD0YTf7jh5_OX]E1
+R3
+Igel6MH5l`Hn`W]gm^M@J02
+R0
+w1682203544
+8../src/Mqst_Demodule.v
+F../src/Mqst_Demodule.v
+!i122 19
+R10
+R4
+R5
+r1
+!s85 0
+31
+R6
+R8
+R9
+!i113 0
+R7
+R1
+n@mqst_@demodule
+vMqst_Module
+R2
+!i10b 1
+!s100 SJMQHEbOmXR6<ilfK[OeX2
+R3
+IH:XT4V;UUSYnQU>HaPA4b1
+R0
+w1682203573
+8../src/Mqst_Module.v
+F../src/Mqst_Module.v
+!i122 19
+L0 1 73
+R4
+R5
+r1
+!s85 0
+31
+R6
+R8
+R9
+!i113 0
+R7
+R1
+n@mqst_@module
+vMqst_top
+R2
+!i10b 1
+!s100 =haFRgkL?f4ebJn3MhNCM1
+R3
+I3[_T[m=iCANMi^YJ71QDg3
+R0
+w1682207006
+8../src/Mqst_top.v
+F../src/Mqst_top.v
+!i122 19
+L0 1 110
+R4
+R5
+r1
+!s85 0
+31
+R6
+R8
+R9
+!i113 0
+R7
+R1
+n@mqst_top
+vprecise_divider
+R2
+!i10b 1
+!s100 U9h8kUSh=fITL4:cS2EGo3
+R3
+IQZoYFUaD_;<@5lzJ:==IO3
+R0
+w1681900443
+8../src/precise_divider.v
+F../src/precise_divider.v
+!i122 19
+L0 40 57
+R4
+R5
+r1
+!s85 0
+31
+R6
+R8
+R9
+!i113 0
+R7
+R1
+vtest_mqst
+!s110 1682207381
+!i10b 1
+!s100 d7_EzDoYK:DeQ;d5OMeNa1
+R3
+IUEh>SBQ30V@[m67m8_QcR3
+R0
+w1682206523
+8test_mqst.v
+Ftest_mqst.v
+!i122 20
+L0 2 57
+R4
+R5
+r1
+!s85 0
+31
+!s108 1682207381.000000
+!s107 test_mqst.v|
+!s90 -reportprogress|300|-work|work|test_mqst.v|
+!i113 0
+R7
+R1
